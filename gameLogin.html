@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Game Login</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        background-color: slategray;
+    }
+    p{
+        color: #fff;
+    }
+
+    h1
+    {
+        color: #fff;
+        text-transform: capitalize;
+        text-shadow: 0 0 10px rgb(255, 161, 161);
+        box-shadow: 0 0 10px #989898;
+    }
+
+    .nav
+    {
+        background-color: darkslategrey;
+    }
+</style>
+<body>
+<div class="nav">
+    <center><p>hi, everyone here is our new game i made this game in 1 day
+        so please login before you play because we want to see who was playing but
+        don't worry about it because we are not taking your personal data to use something
+        and also your data is secure with us and i am arman who made this game and whole things before it
+        thanks for Seeing this Note
+    </p></center>
+    <center><h1>Log in</h1></center>
+    <form method="POST" name="google-sheet">
+        <center id="center" style="background-color: darkslategray; padding-bottom: 150px;">
+           <label for="Name">
+               <br>
+               <input autocomplete="off" name="Name" required type="text" id="input" placeholder="Enter Your Name">
+               </br>
+               </label>
+               
+               <label for="Email">
+               <br>
+               <input autocomplete="off" name="Email" required type="text" id="inputEmail" placeholder="Enter Your Email">
+               </br>
+               </label>
+           
+                <label for="Number">
+                <br>
+                <input autocomplete="off" name="Number" style="margin-bottom: 30px;" required type="text" id="inputNumber" placeholder="Enter Your Number">
+                </br>     
+                </label>    
+           
+                <input type="text" placeholder="Enter IP To join A Game">
+                <br>
+               <button id="UserInterFace" onclick="Ref()">submit</button>
+               </br>
+           <h1>Note: This is not a multiplayer game only you can play this game Game SO ENTER This Ip only 127.009.11.1</h1>
+            </center>
+    </form>
+</div>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxyfFXzBtgcoK7AsfPU5YI7lL6Dp_LpHZkD9BSVdPp7K2iwNOevSUMCM31mVzrLTlhKYw/exec'
+    const form = document.forms['google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+  <script>
+      function Ref() {
+          window.location.replace("index.html");
+      }
+  </script>
+</body>
+</html>

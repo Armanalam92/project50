@@ -1,0 +1,99 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  display: block;
+}
+
+
+#right
+{
+  position: fixed;
+  float: right;
+  margin-left: 1230px;
+  padding: 20px 20px;
+  margin-top: 570px;
+  font-size: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bolder;
+  border-radius: 20px;
+  background-color: darkturquoise;
+  border: none;
+  box-shadow: 0 0 20px darkturquoise,0 0 40px darkturquoise, 0 0 60px darkturquoise;
+}
+
+#left
+{
+  position: fixed;
+  float: right;
+  margin-left: 30px;
+  padding: 20px 20px;
+  margin-top: 570px;
+  font-size: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bolder;
+  border-radius: 20px;
+  background-color: darkturquoise;
+  border: none;
+  box-shadow: 0 0 20px darkturquoise,0 0 40px darkturquoise, 0 0 60px darkturquoise;
+}
+
+#Stop
+{
+  position: fixed;
+  float: right;
+  margin-left: 600px;
+  padding: 20px 20px;
+  margin-top: 570px;
+  font-size: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bolder;
+  border-radius: 20px;
+  background-color: darkturquoise;
+  border: none;
+  box-shadow: 0 0 20px darkturquoise,0 0 40px darkturquoise, 0 0 60px darkturquoise;
+}
+
+input
+{
+  border-radius: 10px;
+  border: 0 0 1px solid darkslategray;
+  padding: 10px 20px;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 20px #984, 0 0 40px #984, 0 0 80px #984;
+}
+
+#center button
+{
+  padding: 20px 25px;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 10px;
+  border: 0 0 1px solid green;
+}
+
+#right:hover{
+  cursor: pointer;
+  background-color: darkslategray;
+  border: none;
+  box-shadow: 0 0 20px darkslategrey,0 0 40px darkslategray, 0 0 60px darkslategray;  
+}
+
+
+
+
+#left:hover{
+  cursor: pointer;
+  background-color: darkslategray;
+  border: none;
+  box-shadow: 0 0 20px darkslategrey,0 0 40px darkslategray, 0 0 60px darkslategray;  
+}
+
+#Stop:hover{
+  cursor: pointer;
+  background-color: darkslategray;
+  border: none;
+  box-shadow: 0 0 20px darkslategrey,0 0 40px darkslategray, 0 0 60px darkslategray;  
+}
